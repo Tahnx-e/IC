@@ -47,6 +47,34 @@ a:hover {
 .auth-buttons .btn-outline-primary,
 .auth-buttons .btn-primary {
     margin-left: 10px;
+    transition: all 0.3s ease; /* Transición suave para los botones */
+}
+
+/* Efecto cuando el ratón pasa sobre el botón */
+.auth-buttons .btn:hover, .nav-link:hover, .search-box button:hover {
+    transform: scale(1.1); /* Aumenta el tamaño */
+    color: #007bff; /* Cambia el color de texto o iconos */
+    letter-spacing: 1px; /* Espaciado de letras */
+    background-color: #495057; /* Cambia el fondo de los botones */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Sombra */
+}
+
+/* Efecto en el texto relacionado cuando el ratón pasa sobre el botón */
+.auth-buttons .btn:hover ~ .search-section h1,
+.auth-buttons .btn:hover ~ .info-section h3,
+.auth-buttons .btn:hover ~ .info-section p,
+.auth-buttons .btn:hover ~ .info-publica-section h1 {
+    transform: scale(1.1); /* Aumenta el tamaño del texto */
+    color: #007bff; /* Cambia el color del texto */
+    letter-spacing: 1px; /* Espaciado de letras */
+    transform: translateY(-5px); /* Desplazamiento hacia arriba */
+}
+
+.search-section h1,
+.info-section h3,
+.info-section p,
+.info-publica-section h1 {
+    transition: all 0.3s ease; /* Suaviza la animación */
 }
 
 /* Sección de búsqueda */
@@ -54,18 +82,6 @@ a:hover {
     background-color: #5F1B2D;
     color: white;
     padding: 50px 0;
-}
-
-.search-section h1 {
-    margin-bottom: 20px;
-    transition: all 0.3s ease; /* Transición suave */
-}
-
-.search-section h1:hover {
-    transform: scale(1.1); /* Aumenta el tamaño */
-    color: #007bff; /* Cambia el color */
-    letter-spacing: 1px; /* Espaciado de letras */
-    transform: translateY(-5px); /* Desplazamiento hacia arriba */
 }
 
 .search-box {
@@ -95,26 +111,10 @@ a:hover {
 .info-section h3 {
     margin-top: 10px;
     font-weight: bold;
-    transition: all 0.3s ease; /* Transición suave */
-}
-
-.info-section h3:hover {
-    transform: scale(1.1); /* Aumenta el tamaño */
-    color: #007bff; /* Cambia el color */
-    letter-spacing: 1px; /* Espaciado de letras */
-    transform: translateY(-5px); /* Desplazamiento hacia arriba */
 }
 
 .info-section p {
     margin: 10px 0;
-    transition: all 0.3s ease; /* Transición suave */
-}
-
-.info-section p:hover {
-    transform: scale(1.1); /* Aumenta el tamaño */
-    color: #007bff; /* Cambia el color */
-    letter-spacing: 1px; /* Espaciado de letras */
-    transform: translateY(-5px); /* Desplazamiento hacia arriba */
 }
 
 /* Información Pública */
@@ -126,19 +126,6 @@ a:hover {
 .info-publica-section h1 {
     margin-bottom: 20px;
     color: #333;
-    transition: all 0.3s ease; /* Transición suave */
-}
-
-.info-publica-section h1:hover {
-    transform: scale(1.1); /* Aumenta el tamaño */
-    color: #007bff; /* Cambia el color */
-    letter-spacing: 1px; /* Espaciado de letras */
-    transform: translateY(-5px); /* Desplazamiento hacia arriba */
-}
-
-.logo-info {
-    width: 200px;
-    margin: 20px 0;
 }
 
 /* Botones */
