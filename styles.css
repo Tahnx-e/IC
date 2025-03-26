@@ -51,7 +51,7 @@ a:hover {
 }
 
 /* Efecto cuando el ratón pasa sobre el botón */
-.auth-buttons .btn:hover, .nav-link:hover, .search-box button:hover {
+.btn:hover, .nav-link:hover, .search-box button:hover {
     transform: scale(1.1); /* Aumenta el tamaño */
     color: #007bff; /* Cambia el color de texto o iconos */
     letter-spacing: 1px; /* Espaciado de letras */
@@ -60,10 +60,18 @@ a:hover {
 }
 
 /* Efecto en el texto relacionado cuando el ratón pasa sobre el botón */
-.auth-buttons .btn:hover ~ .search-section h1,
-.auth-buttons .btn:hover ~ .info-section h3,
-.auth-buttons .btn:hover ~ .info-section p,
-.auth-buttons .btn:hover ~ .info-publica-section h1 {
+.btn:hover ~ .search-section h1,
+.btn:hover ~ .info-section h3,
+.btn:hover ~ .info-section p,
+.btn:hover ~ .info-publica-section h1,
+.nav-link:hover ~ .search-section h1,
+.nav-link:hover ~ .info-section h3,
+.nav-link:hover ~ .info-section p,
+.nav-link:hover ~ .info-publica-section h1,
+.search-box button:hover ~ .search-section h1,
+.search-box button:hover ~ .info-section h3,
+.search-box button:hover ~ .info-section p,
+.search-box button:hover ~ .info-publica-section h1 {
     transform: scale(1.1); /* Aumenta el tamaño del texto */
     color: #007bff; /* Cambia el color del texto */
     letter-spacing: 1px; /* Espaciado de letras */
