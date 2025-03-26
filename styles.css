@@ -1,3 +1,4 @@
+/* Estilo base del botón */
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
@@ -57,6 +58,14 @@ a:hover {
 
 .search-section h1 {
     margin-bottom: 20px;
+    transition: all 0.3s ease; /* Transición suave */
+}
+
+.search-section h1:hover {
+    transform: scale(1.1); /* Aumenta el tamaño */
+    color: #007bff; /* Cambia el color */
+    letter-spacing: 1px; /* Espaciado de letras */
+    transform: translateY(-5px); /* Desplazamiento hacia arriba */
 }
 
 .search-box {
@@ -86,14 +95,26 @@ a:hover {
 .info-section h3 {
     margin-top: 10px;
     font-weight: bold;
+    transition: all 0.3s ease; /* Transición suave */
+}
+
+.info-section h3:hover {
+    transform: scale(1.1); /* Aumenta el tamaño */
+    color: #007bff; /* Cambia el color */
+    letter-spacing: 1px; /* Espaciado de letras */
+    transform: translateY(-5px); /* Desplazamiento hacia arriba */
 }
 
 .info-section p {
     margin: 10px 0;
+    transition: all 0.3s ease; /* Transición suave */
 }
 
-.btn-info {
-    margin-top: 10px;
+.info-section p:hover {
+    transform: scale(1.1); /* Aumenta el tamaño */
+    color: #007bff; /* Cambia el color */
+    letter-spacing: 1px; /* Espaciado de letras */
+    transform: translateY(-5px); /* Desplazamiento hacia arriba */
 }
 
 /* Información Pública */
@@ -105,6 +126,14 @@ a:hover {
 .info-publica-section h1 {
     margin-bottom: 20px;
     color: #333;
+    transition: all 0.3s ease; /* Transición suave */
+}
+
+.info-publica-section h1:hover {
+    transform: scale(1.1); /* Aumenta el tamaño */
+    color: #007bff; /* Cambia el color */
+    letter-spacing: 1px; /* Espaciado de letras */
+    transform: translateY(-5px); /* Desplazamiento hacia arriba */
 }
 
 .logo-info {
