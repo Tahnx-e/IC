@@ -47,11 +47,10 @@ a:hover {
 .auth-buttons .btn-outline-primary,
 .auth-buttons .btn-primary {
     margin-left: 10px;
-    transition: all 0.3s ease; /* Transición suave para los botones */
 }
 
 /* Efecto cuando el ratón pasa sobre el botón */
-.btn:hover, .nav-link:hover, .search-box button:hover {
+.btn:hover {
     transform: scale(1.1); /* Aumenta el tamaño */
     color: #007bff; /* Cambia el color de texto o iconos */
     letter-spacing: 1px; /* Espaciado de letras */
@@ -59,25 +58,18 @@ a:hover {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Sombra */
 }
 
-/* Efecto en el texto relacionado cuando el ratón pasa sobre el botón */
+/* Afecta el texto relacionado con el botón */
 .btn:hover ~ .search-section h1,
 .btn:hover ~ .info-section h3,
 .btn:hover ~ .info-section p,
-.btn:hover ~ .info-publica-section h1,
-.nav-link:hover ~ .search-section h1,
-.nav-link:hover ~ .info-section h3,
-.nav-link:hover ~ .info-section p,
-.nav-link:hover ~ .info-publica-section h1,
-.search-box button:hover ~ .search-section h1,
-.search-box button:hover ~ .info-section h3,
-.search-box button:hover ~ .info-section p,
-.search-box button:hover ~ .info-publica-section h1 {
+.btn:hover ~ .info-publica-section h1 {
     transform: scale(1.1); /* Aumenta el tamaño del texto */
     color: #007bff; /* Cambia el color del texto */
     letter-spacing: 1px; /* Espaciado de letras */
     transform: translateY(-5px); /* Desplazamiento hacia arriba */
 }
 
+/* Asegura una transición suave para los textos */
 .search-section h1,
 .info-section h3,
 .info-section p,
