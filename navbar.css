@@ -86,7 +86,8 @@ display: flex;
 
 .logo_mobile {
     display: none;
-
+ 
+}
 header {
     background-color: #EBE7E0;
     color: white;
