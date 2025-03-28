@@ -84,6 +84,8 @@ display: flex;
 
 }
 
+.logo_mobile {
+    display: none;
 
 header {
     background-color: #EBE7E0;
@@ -203,5 +205,28 @@ right: 200px;
     .toggle-btn { top: 0px;
         right: 110px;
             
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .auth-buttons {
+        margin-left: 20px;
+        margin-top: 10px;
+        margin-bottom: 10px;}
+
+    .toggle-btn { top: 0px;
+        right: 50px;     
+    }
+.logo {
+    display: none;
+
+}
+    .logo_mobile {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 30px;
+        height: 60px;
+        width: auto;
     }
 }
